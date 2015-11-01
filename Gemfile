@@ -33,9 +33,11 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # Add SimpleForm
 gem 'simple_form'
 
-
 # Add Devise
 gem 'devise'
+
+# Add Factory Girl
+gem "factory_girl_rails", "~> 4.0"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
