@@ -1,5 +1,6 @@
 class Course < ActiveRecord::Base
 	belongs_to :user
+	has_many :sections
 
 	validates :title, :presence => {:message => "Title is required"}
 	validates :description, :presence => {:message => "Description is required"}

@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryGirl.define do  
 
 	factory :user do
 		sequence :email do |n|
@@ -16,5 +16,9 @@ FactoryGirl.define do
 		description "This is the description"
 		cost "100.00"
 	end
+
+	factory :section do
+    	title "Section Title"
+    end
 
 end
