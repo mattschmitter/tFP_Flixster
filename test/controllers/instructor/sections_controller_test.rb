@@ -19,4 +19,6 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
 	# 	assert_equal 1, user.courses.sections.count 
 	# end
 
+	# Test out this change worked, by trying to navigate to the page to add a section for a course you didn't create. If everything worked, you'll see an "unauthorized" error message.
+
 end
