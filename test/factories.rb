@@ -5,7 +5,7 @@ FactoryGirl.define do  factory :lesson do
 
 	factory :user do
 		sequence :email do |n|
-			"email#{n}@emial.com"
+			"email#{n}@email.com"
 		end
 		password "pswrd12345678"
 		password_confirmation "pswrd12345678"
@@ -17,11 +17,13 @@ FactoryGirl.define do  factory :lesson do
 		# end
 		title "Title"
 		description "This is the description"
-		cost "100.00"
+		cost 100.00
+		association :user
 	end
 
 	factory :section do
     	title "Section Title"
+    	association :course
     end
 
 end
