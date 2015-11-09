@@ -45,8 +45,8 @@ gem 'carrierwave'
 # Add Figaro
 gem 'figaro'
 
-# Add fog
-gem 'fog', '~> 1.3.1'
+# Replace fog with CarrierWave-AWS
+gem 'carrierwave-aws'
 
 # Add MiniMagick
 gem 'mini_magick', '~> 4.3.1'
