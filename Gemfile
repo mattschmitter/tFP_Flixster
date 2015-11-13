@@ -51,6 +51,9 @@ gem 'carrierwave-aws'
 # Add MiniMagick
 gem 'mini_magick', '~> 4.3.1'
 
+# Add Stripe
+gem 'stripe'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
