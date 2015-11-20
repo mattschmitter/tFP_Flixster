@@ -20,7 +20,7 @@ FactoryGirl.define do  factory :enrollment do
 		# end
 		title "Title"
 		description "This is the description"
-		cost 100.00
+		cost 0.00
 		association :user
 	end
 
