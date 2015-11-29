@@ -39,7 +39,7 @@
 		<% current_course.sections.rank(:row_order).each do |section| %>
 			<li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
 				<div class="header">
-					<span class="glyphicon glyphicon-list"></span>
+					<span class="glyphicon glyphicon-option-vertical"></span>
 					<%= section.title %>
 				</div>
 				<%= link_to "New Lesson", new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-primary btn-xs' %>
@@ -50,7 +50,7 @@
 						<li data-update-url="<%= instructor_lesson_path(lesson) %>">
 							<div class="col-xs-1">
 								<br />
-								<span class="glyphicon glyphicon-list"></span>
+								<span class="glyphicon glyphicon-option-vertical"></span>
 							</div>
 							<div class="col-xs-11 text-center">
 								<p>
