@@ -23,17 +23,18 @@ class Instructor::LessonsControllerTest < ActionController::TestCase
 
 	end
 
-	test "new lesson dif user" do
+	# No longer applicable with the change to a modal on the course show page
+	# test "new lesson dif user" do
 
-		user = FactoryGirl.create(:user)
-		sign_in user
+	# 	user = FactoryGirl.create(:user)
+	# 	sign_in user
 
-		course = FactoryGirl.create(:course)
-		section = FactoryGirl.create(:section, :course => course)
-		get :new, :section_id => section.id
-		assert_response :unauthorized
+	# 	course = FactoryGirl.create(:course)
+	# 	section = FactoryGirl.create(:section, :course => course)
+	# 	get :new, :section_id => section.id
+	# 	assert_response :unauthorized
 
-	end
+	# end
 
 
 end
